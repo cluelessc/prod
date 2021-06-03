@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+ int num,i=1,prod=1;
+ do {
+ printf("Enter number %d: ",i);
+ scanf("%d",&num);
+ if(num==0)
+ {
+ printf("Invalid Input\n");
+ continue;
+ }
+ else if(num==96)
+ {
+ printf("End of Intake\n");
+ break;
+ }
+ prod=prod*num;
+ i++;
+ }
+ while (i<=6);
+ printf("The product is: %d\n",prod);
+ return(0);
+ }
